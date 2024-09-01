@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Box</title>
+<style>
+     body {
+         background-image: url("pick.jpg");
+         font-family: Arial, sans-serif;
+     }
+     h1, h2, th, p {
+         color: white;
+     }
+     .menu-bar {
+         overflow: hidden;
+         background-color: #333;
+     }
+     .menu-bar a {
+         float: left;
+         display: block;
+         color: white;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+     }
+     .menu-bar a:hover {
+         background-color: #ddd;
+         color: black;
+     }
+     table {
+         margin-top: 20px;
+     }
+</style>
+</head>
+<body>
+
+<!-- Menu Bar -->
+<div class="menu-bar">
+    <a href="#home" onclick="showsection('home')">Home</a>
+    <a href="#about" onclick="showsection('about')>About</a>
+    <a href="#contact" onclick="showsection('contact')">Contact</a>
+</div>
+<!--content section-->
+<div id="home" class="content-section">
+<p><h1>Movie Box</h1></p>
+<h2>Select the movie you want to see, download it, and then enjoy watching movies for free!</h2>
+</div>
+<div id="about" class="content-section">
+<h2>about us</h2>
+<p>Movie box actually this is free website that has aimed at helping those individualls who can not afford to buy netflix movies fees and it was made by idkevin 
+1)for those who want to support us they can send their donation on this number
+2)+250794023388 name are kevin idahemuka we can appreciate your help thanks!</p>
+</div>
+<div id="contact" class="content-section">
+<h2>contact us</h2>
+<p>phone:+250794023388</p>
+<p>Email:kidahemuka@gmail.com</p>
+</div>
+
+<!-- Movie Download and Play Table -->
+<table border="10" width="100%">
+<tr>
+    <th>Longlegs (2024)</th>
+    <th>Harold (2024)</th>
+    <th>The Magic of Lemon Drops (2024)</th>
+    <th>Greedy People (2024)</th>
+    <th>My Divorce Party (2024)</th>
+    <th>Trap (2024)</th>
+</tr>
+<tr>
+    <td><a href="longlegs.mp4" download>Download Longlegs</a><br><input type="file" accept="video/*" onchange="playVideo(event, 'video1')"><br><video id="video1" controls width="200" height="200"></video></td>
+    <td><a href="harold.mp4" download>Download Harold</a><br><input type="file" accept="video/*" onchange="playVideo(event, 'video2')"><br><video id="video2" controls width="200" height="200"></video></td>
+    <td><a href="the magic of lemon drops.mp4" download>Download The Magic of Lemon Drops</a><br><input type="file" accept="video/*" onchange="playVideo(event, 'video3')"><br><video id="video3" controls width="200" height="200"></video></td>
+    <td><a href="Greedy people.mp4" download>Download Greedy People</a><br><input type="file" accept="video/*" onchange="playVideo(event, 'video4')"><br><video id="video4" controls width="200" height="200"></video></td>
+    <td><a href="my divorce party.mp4" download>Download My Divorce Party</a><br><input type="file" accept="video/*" onchange="playVideo(event, 'video5')"><br><video id="video5" controls width="200" height="200"></video></td>
+    <td><a href="trap.mp4" download>Download Trap</a><br><input type="file" accept="video/*" onchange="playVideo(event, 'video6')"><br><video id="video6" controls width="200" height="200"></video></td>
+</tr>
+</table>
+
+<!-- Additional Movies Table -->
+<table border="10" width="100%">
+<tr>
+    <th>Jackpot (2024)</th>
+    <th>The Killer (2024)</th>
+    <th>Running on Empty (2024)</th>
+    <th>Art of Eight Limbs (2024)</th>
+    <th>Trap (2024)</th>
+    <th>The Clean Up Crew (2024)</th>
+</tr>
+<tr>
+    <td><a href="jackpot.mp4" download>Download Jackpot</a><br><input type="file" accept="video/*" onchange="playVideo(event, 'video7')"><br><video id="video7" controls width="200" height="200"></video></td>
+    <td><a href="the killer.mp4" download>Download The Killer</a><br><input type="file" accept="video/*" onchange="playVideo(event, 'video8')"><br><video id="video8" controls width="200" height="200"></video></td>
+    <td><a href="Running on empty.mp4" download>Download Running on Empty</a><br><input type="file" accept="video/*" onchange="playVideo(event, 'video9')"><br><video id="video9" controls width="200" height="200"></video></td>
+    <td><a href="Art of eight limbs.mp4" download>Download Art of Eight Limbs</a><br><input type="file" accept="video/*" onchange="playVideo(event, 'video10')"><br><video id="video10" controls width="200" height="200"></video></td>
+    <td><a href="trap.mp4" download>Download Trap</a><br><input type="file" accept="video/*" onchange="playVideo(event, 'video11')"><br><video id="video11" controls width="200" height="200"></video></td>
+    <td><a href="the clean up crew.mp4" download>Download The Clean Up Crew</a><br><input type="file" accept="video/*" onchange="playVideo(event, 'video12')"><br><video id="video12" controls width="200" height="200"></video></td>
+</tr>
+</table>
+
+<!-- More Movies Table -->
+<table border="10" width="100%">
+<tr>
+    <th>Crescent City (2024)</th>
+    <th>Oddity (2024)</th>
+    <th>Incoming (2024)</th>
+</tr>
+<tr>
+    <td><a href="Crescent city.mp4" download>Download Crescent City</a><br><input type="file" accept="video/*" onchange="playVideo(event, 'video13')"><br><video id="video13" controls width="200" height="200"></video></td>
+    <td><a href="oddity.mp4" download>Download Oddity</a><br><input type="file" accept="video/*" onchange="playVideo(event, 'video14')"><br><video id="video14" controls width="200" height="200"></video></td>
+    <td><a href="incoming.mp4" download>Download Incoming</a><br><input type="file" accept="video/*" onchange="playVideo(event, 'video15')"><br><video id="video15" controls width="200" height="200"></video></td>
+</tr>
+</table>
+
+<script>
+    function playVideo(event, videoId) {
+        const video = document.getElementById(videoId);
+        const file = event.target.files[0];
+        const url = URL.createObjectURL(file);
+        video.src = url;
+        video.play();
+    }
+</script>
+
+</body>
+</html>
+
+
